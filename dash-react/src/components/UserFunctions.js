@@ -8,6 +8,9 @@ export const register = newUser => {
         email: newUser.email,
         password: newUser.password
     })
+    .then(response => {
+        console.log('Registered')
+      })
 }
 
 export const login = user => {
@@ -16,9 +19,9 @@ export const login = user => {
         email: user.email,
         password: user.password
     })
-    .then(res => {
-        localStorage.setItem('usertoken', res.data)
-        return res.data
+    .then(response => {
+        localStorage.setItem('usertoken', response.data)
+        return response.data
     })
     .catch(err => {
         console.log(err)

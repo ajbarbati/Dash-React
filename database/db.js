@@ -8,7 +8,7 @@ const sequelize = new Sequelize("nodejs_login1", "root", "root", {
     pool: {
         max: 5,
         min: 0,
-        acquire: 300000,
+        acquire: 30000,
         idle: 10000
     }
 })

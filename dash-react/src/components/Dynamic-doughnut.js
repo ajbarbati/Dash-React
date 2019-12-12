@@ -31,7 +31,7 @@ export default class DynamicDoughnutExample extends React.Component {
 		return getState();
 	}
 
-	componentWillMount() {
+	componentDidMount() {
 		setInterval(() => {
 			this.setState(getState());
 		}, 5000);
