@@ -102,6 +102,7 @@ body{
 
 .ribbon-box .ribbon-primary {
     background: #2d7bf4;
+
 }
 
 .ribbon-box .ribbon {
@@ -117,6 +118,7 @@ body{
     box-shadow: 2px 5px 10px rgba(49,58,70,.15);
     color: #fff;
     font-size: 13px;
+    cursor: pointer;
 }
 .text-custom {
     color: #02c0ce!important;
